@@ -329,6 +329,8 @@ fi
 # Grunt Tasks --------------------------------
 if [[ $USE_GRUNT ]]; then
   cd $BUILD_DIR
+  eval cat package.json
+  eval npm install
   eval grunt $GRUNT_OPTIONS
 fi
 
