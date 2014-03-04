@@ -331,6 +331,7 @@ if [[ $USE_GRUNT ]]; then
   cd $BUILD_DIR
   eval cat package.json
   eval npm install
+  eval npm install -g node.coffee
   eval grunt $GRUNT_OPTIONS
 fi
 
